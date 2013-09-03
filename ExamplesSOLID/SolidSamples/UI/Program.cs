@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Model.ISP;
 using Model.OCP;
 
 namespace UI
@@ -12,6 +13,28 @@ namespace UI
         static void Main(string[] args)
         {
             SampleOfOCP();
+            SampleOfISP();
+        }
+
+        private static void SampleOfISP()
+        {
+            ////this is the danger of not following this principle
+            //IVehicleBreakingISP harley = new MotorcycleBreakingISP();
+            //harley.OpenDoor();
+
+            Console.WriteLine("Sample of ISP");
+            IVehicle vehicle = new Car();
+            vehicle.TurnOn();
+            vehicle.TurnOff();
+            Console.WriteLine("Press Any key to Contunue the sample of OCP");
+            Console.ReadKey();
+
+            vehicle = new Motorcycle();
+            vehicle.TurnOn();
+            vehicle.TurnOff();
+
+            Console.ReadKey();
+
         }
 
         private static void SampleOfOCP()

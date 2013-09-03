@@ -39,6 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ISP\Car.cs" />
+    <Compile Include="ISP\CarBreakingISP.cs" />
+    <Compile Include="ISP\IHasDoors.cs" />
+    <Compile Include="ISP\IVehicle.cs" />
+    <Compile Include="ISP\IVehicleBreakingISP.cs" />
+    <Compile Include="ISP\Motorcycle.cs" />
+    <Compile Include="ISP\MotorcycleBreakingISP.cs" />
     <Compile Include="OCP\DrawingShapesWithoutOcp.cs" />
     <Compile Include="OCP\RectangleShape.cs" />
     <Compile Include="OCP\DrawingShapes.cs" />
@@ -51,7 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DIP\" />
-    <Folder Include="ISP\" />
     <Folder Include="LSP\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
