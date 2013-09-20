@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model.ISP;
+using Model.LSP;
 using Model.OCP;
 
 namespace UI
@@ -14,6 +15,20 @@ namespace UI
         {
             SampleOfOCP();
             SampleOfISP();
+            SampleOfLSP();
+        }
+
+        private static void SampleOfLSP()
+        {
+            Console.WriteLine("Sample of LSP");
+            
+            Person.PuttingOnLeftFootBreakingLSP(new RightShoe(), new RightSock());
+            Person.PuttingOnRightFootBreakingLSP(new LeftShoe(), new RightSock());
+
+            Person.PuttingOnRightFootUsingLSP(new RightShoe(), new RightSock());
+            Person.PuttingOnLeftFootUsingLSP(new LeftShoe(), new RightSock());
+
+            Console.ReadKey();
         }
 
         private static void SampleOfISP()

@@ -46,6 +46,13 @@
     <Compile Include="ISP\IVehicleBreakingISP.cs" />
     <Compile Include="ISP\Motorcycle.cs" />
     <Compile Include="ISP\MotorcycleBreakingISP.cs" />
+    <Compile Include="LSP\RightShoe.cs" />
+    <Compile Include="LSP\LeftShoe.cs" />
+    <Compile Include="LSP\LeftSock.cs" />
+    <Compile Include="LSP\Person.cs" />
+    <Compile Include="LSP\RightSock.cs" />
+    <Compile Include="LSP\Shoe.cs" />
+    <Compile Include="LSP\Sock.cs" />
     <Compile Include="OCP\DrawingShapesWithoutOcp.cs" />
     <Compile Include="OCP\RectangleShape.cs" />
     <Compile Include="OCP\DrawingShapes.cs" />
@@ -58,7 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DIP\" />
-    <Folder Include="LSP\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
